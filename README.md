@@ -39,6 +39,21 @@ source env/bin/activate  # On Windows use `.\env\Scripts\activate`
 pip3 install -r requirements.txt
 ```
 
+### Using pip (or pipx) install
+
+- Install fridaDownloader with pip3
+
+```bash
+pip3 install fridaDownloader 
+```
+- Install fridaDownloader with pipx
+
+```bash
+pipx install fridaDownloader 
+```
+
+See this project on PyPi: [https://pypi.org/project/fridaDownloader/](https://pypi.org/project/fridaDownloader/) 
+
 ## Usage
 
 ```bash
