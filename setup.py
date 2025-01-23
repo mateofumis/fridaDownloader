@@ -12,7 +12,7 @@ setup(
             "fridaDownloader=fridaDownloader:main",
         ],
     },
-    description="fridaDownloader is a command-line tool that streamlines downloading the Frida Gadget or Server for Android, enabling developers and security researchers to quickly access the components needed for dynamic instrumentation."
+    description="fridaDownloader is a command-line tool that streamlines downloading the Frida Gadget or Server for Android, enabling developers and security researchers to quickly access the components needed for dynamic instrumentation.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/mateofumis/fridaDownloader",
