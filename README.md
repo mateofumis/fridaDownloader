@@ -5,8 +5,7 @@ fridaDownloader is a command-line tool that streamlines downloading the Frida Ga
 ## Features
 
 - **Download Options**: Easily download either the Frida Gadget or Server for Android.
-- **Latest Version**: Use the `--last-version` option to download the most recent version of Frida.
-- **Specific Version**: Specify a particular version of Frida to download using the `--version VERSION` option.
+- **Specific Version**: Specify a particular version of Frida to download using the `--version VERSION` option or it will download the latest version by default.
 - **Target Selection**: Choose the target for download with the `--target` option, allowing you to select either `gadget` or `server`.
 - **Architecture Support**: Select the appropriate Android architecture with the `--architecture` option. Supported architectures include:
   - `arm`
@@ -64,14 +63,13 @@ $: fridaDownloader -h
 *                           by hackermater  *
 *********************************************
 
-usage: fridaDownloader.py [-h] [--last-version] [--version VERSION] --target {gadget,server} [--architecture ARCHITECTURE]
+usage: fridaDownloader.py [-h] [--version VERSION] --target {gadget,server} [--architecture ARCHITECTURE]
                           [--output OUTPUT]
 
 Download Frida Gadget or Server for Android
 
 options:
   -h, --help            show this help message and exit
-  --last-version        Download the latest version of Frida
   --version VERSION     Download a specific version of Frida
   --target {gadget,server}
                         Specify the target to download: gadget or server
@@ -85,7 +83,7 @@ options:
 - Download the last version of Frida Server for x86 architecture:
 
 ```bash
-python3 fridaDownloader.py --target server --architecture x86 --last-version
+python3 fridaDownloader.py --target server --architecture x86
 ```
 
 - Download a specific version of Frida Gadget for arm64 architecture with specific output:
