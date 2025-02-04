@@ -83,7 +83,6 @@ def main():
 
     parser = argparse.ArgumentParser(description="Download Frida Gadget or Server for Android")
     
-    parser.add_argument('--last-version', action='store_true', help="Download the latest version of Frida")
     parser.add_argument('--version', type=str, help="Download a specific version of Frida")
     parser.add_argument('--target', type=str, choices=['gadget', 'server'], required=True, help="Specify the target to download: gadget or server")
     parser.add_argument('--architecture', type=str, default='arm', help="Android architecture (default: arm). Options: arm, arm64, x86, x86_64")
@@ -91,15 +90,13 @@ def main():
 
     args = parser.parse_args()
 
-    if args.last_version:
+    if args.version:
+        download_file(args.target, args.architecture, args.version, args.output)
+    else:
         print(f"{BRIGHT_YELLOW}[*] Fetching the latest version of Frida...{RESET}")
         latest_version = get_latest_version()
         if latest_version:
             download_file(args.target, args.architecture, latest_version, args.output)
-    elif args.version:
-        download_file(args.target, args.architecture, args.version, args.output)
-    else:
-        print(f"\n{BRIGHT_RED}[-] You must specify either --last-version or --version to download Frida.{RESET}")
 
 if __name__ == "__main__":
     main()
