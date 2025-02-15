@@ -2,12 +2,16 @@
 
 fridaDownloader is a command-line tool that streamlines downloading the Frida Gadget or Server for Android, enabling developers and security researchers to quickly access the components needed for dynamic instrumentation.
 
+![GitHub Release](https://img.shields.io/github/v/release/mateofumis/FridaDownloader)
+![PyPI - Version](https://img.shields.io/pypi/v/fridaDownloader)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/fridaDownloader)
+
 ## Features
 
 - **Download Options**: Easily download either the Frida Gadget or Server for Android.
-- **Specific Version**: Specify a particular version of Frida to download using the `--version VERSION` option or it will download the latest version by default.
-- **Target Selection**: Choose the target for download with the `--target` option, allowing you to select either `gadget` or `server`.
-- **Architecture Support**: Select the appropriate Android architecture with the `--architecture` option. Supported architectures include:
+- **Specific Version**: Specify a particular version of Frida to download using the `-v VERSION` option or it will download the latest version by default.
+- **Target Selection**: Choose the target for download with the `-t` option, allowing you to select either `gadget` or `server`.
+- **Architecture Support**: Select the appropriate Android architecture with the `-a` option. Supported architectures include:
   - `arm`
   - `arm64`
   - `x86`
@@ -50,8 +54,6 @@ pip3 install fridaDownloader
 ```bash
 pipx install fridaDownloader 
 ```
-
-See this project on PyPi: [https://pypi.org/project/fridaDownloader/](https://pypi.org/project/fridaDownloader/) 
 
 ## Usage
 
