@@ -9,9 +9,9 @@ fridaDownloader is a command-line tool that streamlines downloading the Frida Ga
 ## Features
 
 - **Download Options**: Easily download either the Frida Gadget or Server for Android.
-- **Specific Version**: Specify a particular version of Frida to download using the `-v VERSION` option or it will download the latest version by default.
-- **Target Selection**: Choose the target for download with the `-t` option, allowing you to select either `gadget` or `server`.
-- **Architecture Support**: Select the appropriate Android architecture with the `-a` option. Supported architectures include:
+- **Specific Version**: Specify a particular version of Frida to download using the `--version VERSION` option or it will download the latest version by default.
+- **Target Selection**: Choose the target for download with the `--target` option, allowing you to select either `gadget` or `server`.
+- **Architecture Support**: Select the appropriate Android architecture with the `--architecture` option. Supported architectures include:
   - `arm`
   - `arm64`
   - `x86`
